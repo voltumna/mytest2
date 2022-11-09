@@ -1,0 +1,67 @@
+{
+    "service": [
+        {
+            "serviceDetail": {
+                "folderId": "e001cfd0c1c1ffaa18e187b5e72fe883",
+                "id": "e001cfd0c1c1ffaa18e187b5e72fea4e",
+                "name": "oauth\/manager",
+                "enabled": "true",
+                "serviceMappings": {
+                    "httpMapping": {
+                        "urlPattern": "\/oauth\/manager",
+                        "verbs": {
+                            "verb": [
+                                "GET",
+                                "POST",
+                                "PUT",
+                                "DELETE"
+                            ]
+                        }
+                    }
+                },
+                "properties": {
+                    "property": [
+                        {
+                            "key": "hasRouting",
+                            "booleanValue": "true"
+                        },
+                        {
+                            "key": "internal",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "policyRevision",
+                            "longValue": "1"
+                        },
+                        {
+                            "key": "soap",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "tracingEnabled",
+                            "booleanValue": "false"
+                        },
+                        {
+                            "key": "wssProcessingEnabled",
+                            "booleanValue": "false"
+                        }
+                    ]
+                }
+            },
+            "resources": {
+                "resourceSet": [
+                    {
+                        "tag": "policy",
+                        "resource": [
+                            {
+                                "type": "policy",
+                                "content": "oauth\/manager.xml"
+                            }
+                        ]
+                    }
+                ]
+            },
+            "id": "e001cfd0c1c1ffaa18e187b5e72fea4e"
+        }
+    ]
+}

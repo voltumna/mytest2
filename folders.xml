@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?><l7:Export xmlns:l7="http://ns.l7tech.com/2010/04/gateway-management">
+    <l7:Folders>
+      <l7:Folder id="0000000000000000ffffffffffffec76" version="0">
+        <l7:Name>Root Node</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="0000000000000000ffffffffffffec76" id="e001cfd0c1c1ffaa18e187b5e72fc718" version="0">
+        <l7:Name>OTK</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc718" id="161861da3a78c5dcdc62696d16914781" version="0">
+        <l7:Name>Customizations</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc718" id="e001cfd0c1c1ffaa18e187b5e72fc818" version="0">
+        <l7:Name>Policy Fragments</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc718" id="e001cfd0c1c1ffaa18e187b5e72fc758" version="0">
+        <l7:Name>Server</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="161861da3a78c5dcdc62696d16914781" id="24e6fd7c5b6fb3a96690246c8ac4922c" version="0">
+        <l7:Name>oauth manager</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fc858" version="0">
+        <l7:Name>configuration</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="161861da3a78c5dcdc62696d16914781" id="161861da3a78c5dcdc62696d169147d0" version="0">
+        <l7:Name>caching</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="161861da3a78c5dcdc62696d1691481a" version="0">
+        <l7:Name>caching</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fd08e" version="0">
+        <l7:Name>validation - verification</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fd6e8" version="0">
+        <l7:Name>authentication</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="161861da3a78c5dcdc62696d16914781" id="24e6fd7c5b6fb3a96690246c8ac49170" version="0">
+        <l7:Name>Authorization Server</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fc8d8" version="0">
+        <l7:Name>persistence</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc818" id="e001cfd0c1c1ffaa18e187b5e72fcf8e" version="0">
+        <l7:Name>manage</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="161861da3a78c5dcdc62696d16914781" id="bc9a31b7578652a08a514d7d4fef25f3" version="0">
+        <l7:Name>id_token</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="161861da3a78c5dcdc62696d16914781" id="bc9a31b7578652a08a514d7d4fef309b" version="0">
+        <l7:Name>authentication</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc758" id="e001cfd0c1c1ffaa18e187b5e72fc798" version="0">
+        <l7:Name>Internal</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc858" id="e001cfd0c1c1ffaa18e187b5e72fe8c3" version="0">
+        <l7:Name>oauth manager</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc858" id="e7dbb9b46e8f153f8653b0b72105685c" version="0">
+        <l7:Name>Authorization Server</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc8d8" id="e001cfd0c1c1ffaa18e187b5e72fd6a8" version="0">
+        <l7:Name>session</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fcf8e" id="e001cfd0c1c1ffaa18e187b5e72fd5e8" version="0">
+        <l7:Name>session</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc8d8" id="e001cfd0c1c1ffaa18e187b5e72fcb8d" version="0">
+        <l7:Name>id_token</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fcf8e" id="e001cfd0c1c1ffaa18e187b5e72fd00e" version="0">
+        <l7:Name>id_token</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fc798" id="e001cfd0c1c1ffaa18e187b5e72fedd0" version="0">
+        <l7:Name>Tools</l7:Name>
+      </l7:Folder>
+      <l7:Folder folderId="e001cfd0c1c1ffaa18e187b5e72fedd0" id="e001cfd0c1c1ffaa18e187b5e72fe883" version="0">
+        <l7:Name>OAuth Manager</l7:Name>
+      </l7:Folder>
+    </l7:Folders>
+  </l7:Export>

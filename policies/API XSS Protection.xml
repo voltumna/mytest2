@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wsp:Policy xmlns:L7p="http://www.layer7tech.com/ws/policy" xmlns:wsp="http://schemas.xmlsoap.org/ws/2002/12/policy">
+    <wsp:All wsp:Usage="Required">
+        <L7p:CommentAssertion>
+            <L7p:Comment stringValue="This assertion will check against any potential XSS risks."/>
+        </L7p:CommentAssertion>
+        <wsp:OneOrMore wsp:Usage="Required">
+            <L7p:Regex>
+                <L7p:AssertionComment assertionComment="included">
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="LEFT.COMMENT"/>
+                            <L7p:value stringValue="client_key REGX"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:AssertionComment>
+                <L7p:AutoTarget booleanValue="false"/>
+                <L7p:CaseInsensitive booleanValue="true"/>
+                <L7p:OtherTargetMessageVariable stringValue="allinput"/>
+                <L7p:ProceedIfPatternMatches booleanValue="false"/>
+                <L7p:Regex stringValue="(%3c|[&lt;])(\w|%(?!20))"/>
+                <L7p:RegexName stringValue="Validate all input"/>
+                <L7p:Replacement stringValue=""/>
+                <L7p:Target target="OTHER"/>
+            </L7p:Regex>
+            <L7p:Encapsulated>
+                <L7p:AssertionComment assertionComment="included">
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="LEFT.COMMENT"/>
+                            <L7p:value stringValue="103"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:AssertionComment>
+                <L7p:EncapsulatedAssertionConfigGuid stringValue="56bd8147-3ab4-4d09-9460-8b2de02b7a9e"/>
+                <L7p:EncapsulatedAssertionConfigName stringValue="OTK Fail with error message"/>
+                <L7p:Parameters mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="apiPrefix"/>
+                        <L7p:value stringValue=""/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="givenErrorCode"/>
+                        <L7p:value stringValue="103"/>
+                    </L7p:entry>
+                </L7p:Parameters>
+            </L7p:Encapsulated>
+            <wsp:All wsp:Usage="Required">
+                <L7p:AuditDetailAssertion>
+                    <L7p:Detail stringValue="API XSS Protection caught potential security risks."/>
+                </L7p:AuditDetailAssertion>
+                <L7p:FalseAssertion/>
+                <L7p:assertionComment>
+                    <L7p:Properties mapValue="included">
+                        <L7p:entry>
+                            <L7p:key stringValue="LEFT.COMMENT"/>
+                            <L7p:value stringValue="overwrite content-type"/>
+                        </L7p:entry>
+                    </L7p:Properties>
+                </L7p:assertionComment>
+            </wsp:All>
+            <L7p:assertionComment>
+                <L7p:Properties mapValue="included">
+                    <L7p:entry>
+                        <L7p:key stringValue="LEFT.COMMENT"/>
+                        <L7p:value stringValue="PROTECT"/>
+                    </L7p:entry>
+                    <L7p:entry>
+                        <L7p:key stringValue="RIGHT.COMMENT"/>
+                        <L7p:value stringValue="// Validate form field params against xss or injection attacks"/>
+                    </L7p:entry>
+                </L7p:Properties>
+            </L7p:assertionComment>
+        </wsp:OneOrMore>
+    </wsp:All>
+</wsp:Policy>
